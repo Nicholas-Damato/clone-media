@@ -130,6 +130,7 @@ body {
   z-index: 27;
   justify-content: space-around;
   height: auto;
+  position:fixed;
   }
 
   .trio{
