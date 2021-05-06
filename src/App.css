@@ -1,38 +1,163 @@
-.App {
+body {
+  margin: 0;
+  display: flex;
+}
+
+
+.header-box{
+  width: 100vw;
+  
+}
+
+.nav-bar{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  position: relative;
+  z-index: 27;
+}
+
+.header-text{
+  margin: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.list{
+  list-style: none;
+  align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.spacing{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.title{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding-top: 150px;
+}
+
+.button{
+  height: 65px;
+  width: 200px;
+  background-color: rgb(250, 212, 42);
+  color: white;
+  border: none;
+  border-radius: 5%;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.greeting1{
+  font-size: 50px;
+  margin: 0;
+}
+
+.greeting2{
+  font-size: 75px;
+  margin: 0;
+}
+
+.services{
+  display:flex;
+  position: relative;
+  width: 100vw;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.individual{
+  width: 250px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.individual-2{
+  width: 250px;
+  text-align: center;
+  margin-left: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.trio{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  width: 100vw;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+@media(max-width: 1000px){
+  .nav-bar{
+    width: 100%;
+  display: flex;
+  background-color: gray;
+  z-index: 27;
+  justify-content: space-around;
+  height: auto;
+  }
+
+  .trio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .individual-2{
+    margin: 0;
+  }
+
+  .button-style{
+    width: 50px;
+    height: 50px
+  }
+
+  .list{
+    display: none;
+  }
+
+
+  .grow{
+    background-color: yellow;
+  }
+
+  .header-text{
+    font-size: 20px;
+  }
+
+  .greeting1{
+    text-align: center;
+  }
+  
+  .greeting2{
+    text-align: center
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:hover{
+  background-color:green;
+}
+
+@media(min-width: 1000px){
+  .display{
+    display:none;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
