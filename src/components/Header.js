@@ -10,17 +10,22 @@ class Header extends Component {
 
     open = () => {
         this.setState({ grow: !this.state.grow })
-        console.log('testing')
     }
 
 
     render() {
         return (
             <div>
-                < div className={`nav-bar ${this.state.grow ? 'grow' : ''}`
-                }>
+                < div className={`nav-bar`}>
                     <h1 className='header-text'> Start BootStrap </h1>
                     <ul className='list'>
+                        <li className='spacing'>STUFF</li>
+                        <li className='spacing'>GOES</li>
+                        <li className='spacing'>HERE</li>
+                        <li className='spacing'>FOR</li>
+                        <li className='spacing'>LINKS</li>
+                    </ul>
+                    <ul className={`list-2 ${this.state.grow ? 'grow' : ''}`}>
                         <li className='spacing'>STUFF</li>
                         <li className='spacing'>GOES</li>
                         <li className='spacing'>HERE</li>
